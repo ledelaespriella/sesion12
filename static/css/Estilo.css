@@ -1,0 +1,43 @@
+
+h1 {
+    color: #377ba8;
+    text-align: center;
+    background-color: lightblue;
+  }
+  form {
+    width: 500px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+  }
+  
+  form input {
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 10px;
+    display: inline-block;
+  }
+  
+  button {
+    text-align: center;
+    font-weight: bold;
+  }
+
+.form_boton{
+    color: #0099CC;
+    width: 75px;
+    border-radius: 6px;
+  
+padding: 2px
+  }
+
+  .form_control{
+    font-family: sans-serif; 
+    font-size: 18px; 
+    font-weight: 400; 
+    color: #652de7; 
+    background:#d8dadb
+  }
+

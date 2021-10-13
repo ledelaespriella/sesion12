@@ -1,0 +1,36 @@
+{%extends 'base/baseEst.html' %}
+
+{%block title %} Ingreso {%endblock %}
+
+{%block content %}
+    <h1> Ingreso de estudiantes</h1>
+
+    <form action='/estudiante/save' id='formulario' method='POST'>
+        {{form.hidden_tag()}}
+        <div class="">
+            {{ form.documento.label }}
+            {{ form.documento(size=20) }}
+        </div>
+        <div>
+            {{ form.nombre.label }}
+            {{ form.nombre(size=20) }} <br><br>
+        </div>
+        <div>
+            {{ form.ciclo.label }}
+            {{ form.ciclo() }}
+            {{ form.sexo.label }}
+            {{ form.sexo(size=10) }} <br>
+            {{ form.estado() }}
+            {{ form.estado.label }} <br><br>
+        </div>
+    
+        <div>
+            {{ form.enviar(size=9) }}
+            {{ form.consultar(size=9) }}
+            {{ form.listar(size=9) }}
+            {{ form.actualizar(size=9) }}
+            {{ form.eliminar(size=9) }}
+        </div>
+
+    </form>
+{%endblock %}
